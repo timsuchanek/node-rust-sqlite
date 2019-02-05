@@ -1,12 +1,10 @@
 {
   "name": "node-rust-sqlite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "dependencies": {
-    "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
     "neon-cli": "^0.2.0",
-    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat",
-    "node-pre-gyp-github": "^1.4.3"
+    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
@@ -17,10 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/timsuchanek/node-rust-sqlite.git"
   },
-  "files": [
-    "native/index.node",
-    "lib"
-  ],
   "binary": {
     "module_name": "index",
     "host": "https://github.com/timsuchanek/node-rust-sqlite/releases/download/",
@@ -28,5 +22,8 @@
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "module_path": "./native",
     "pkg_path": "."
+  },
+  "devDependencies": {
+    "node-pre-gyp-github": "^1.4.3"
   }
 }
