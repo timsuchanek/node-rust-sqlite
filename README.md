@@ -1,3 +1,3 @@
-# arrays
+# Node Rust Sqlite
 
-Examples of creating arrays and adding elements to them
+This example uses rustqlite in Rust and binds that to Node.js
