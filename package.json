@@ -1,6 +1,6 @@
 {
-  "name": "arrays",
-  "version": "0.1.0",
+  "name": "node-rust-sqlite",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "dependencies": {
     "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
