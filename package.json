@@ -4,7 +4,8 @@
   "main": "lib/index.js",
   "dependencies": {
     "neon-cli": "^0.2.0",
-    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat"
+    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat",
+    "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
@@ -23,7 +24,5 @@
     "module_path": "./native",
     "pkg_path": "."
   },
-  "devDependencies": {
-    "node-pre-gyp-github": "^1.4.3"
-  }
+  "devDependencies": {}
 }
