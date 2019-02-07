@@ -7,6 +7,10 @@
     "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat",
     "node-pre-gyp-github": "^1.4.3"
   },
+  "files": [
+    "native/index.node",
+    "lib"
+  ],
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "package": "node-pre-gyp package",
